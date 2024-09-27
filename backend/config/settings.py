@@ -27,7 +27,7 @@ SECRET_KEY = secret.SECRET_KEY
 OPENAI_API_KEY = secret.OPENAI_API_KEY
 DEEPL_API_KEY = secret.DEEPL_API_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     secret.AWS_IP,
@@ -106,23 +106,23 @@ WSGI_APPLICATION = "config.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
-    }
-}
-# postgresql 사용시
 # DATABASES = {
 #     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": secret.POSTGRESQL_NAME,
-#         "HOST": "localhost",
-#         "PORT": "5432",
-#         "USER": secret.POSTGRESQL_USER,
-#         "PASSWORD": secret.POSTGRESQL_PASSWORD,
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": BASE_DIR / "db.sqlite3",
 #     }
 # }
+# postgresql 사용시
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": secret.POSTGRESQL_NAME,
+        "HOST": "localhost",
+        "PORT": "5432",
+        "USER": secret.POSTGRESQL_USER,
+        "PASSWORD": secret.POSTGRESQL_PASSWORD,
+    }
+}
 
 # CORS
 CORS_ORIGIN_WHITELIST = [
@@ -257,7 +257,7 @@ USE_TZ = True
 
 
 # AWS Setting
-if secret.USE_S3:
+if not DEBUG:
     AWS_REGION = "ap-northeast-2"  # AWS서버의 지역
     AWS_STORAGE_BUCKET_NAME = secret.MY_AWS_STORAGE_BUCKET_NAME  # 생성한 버킷 이름
     AWS_ACCESS_KEY_ID = secret.MY_AWS_ACCESS_KEY_ID  # 액서스 키 ID

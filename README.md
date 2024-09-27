@@ -1,11 +1,3 @@
-# BACKEND
-
-가상환경을 키고
-python manage.py runserver 사용하여 실행
-
-
-pip freeze > requirements.txt  package
-
 # 📖Novel Stella
 스파르타 내일배움캠프 AI 6기에서 진행한 최종 팀 프로젝트입니다. AI를 이용한 **'AI 소설 생성 커뮤니티'** 웹 페이지를 구현하였습니다.
 
@@ -22,14 +14,14 @@ pip freeze > requirements.txt  package
 
 <br/>
 
-👩‍💻 **프론트엔드**
+👩‍💻 [**프론트엔드**](https://github.com/1489ehdghks/NOST-frontend)
 
 - 김동환 [@1489ehdghks] (https://github.com/1489ehdghks)
 - 이환희 [@tia4613] (https://github.com/tia4613)
 
 <br/>
 
-👨‍💻 **백엔드**
+👨‍💻 [**백엔드**](https://github.com/Juunsik/NOST-backend)
 
 - 허준혁 [@Juunsik] (https://github.com/Juunsik)
 - 이혜민 [@hy2min] (https://github.com/hy2min)
@@ -38,11 +30,11 @@ pip freeze > requirements.txt  package
 <br/>
 
 # 🏗️ 서비스 아키텍처
-![image](https://github.com/1489ehdghks/NOST/assets/159985538/6155f958-9fb4-444a-8e89-75671c4bd7f8)
+![nost-architecture](https://github.com/user-attachments/assets/f9e6dceb-0602-47a8-a7bc-0f1a3ac83cb0)
 
 
 # ⚙️사용 환경 설정
-  - [FRONTEND](https://github.com/1489ehdghks/NOST/wiki/%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95(Frontend))
+  - FRONTEND
 
 1. 가상환경 실행
 2. node_modeules 설치
@@ -51,7 +43,7 @@ pip freeze > requirements.txt  package
 
 
 
-  - [BACKEND](https://github.com/1489ehdghks/NOST/wiki/%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95(Backend))
+  - BACKEND
 
 1. 가상환경 실행
 2. pip 설치
@@ -116,16 +108,14 @@ pip freeze > requirements.txt  package
 
 
 # 🛠️ ERD
-![image](https://github.com/1489ehdghks/NOST/assets/159985538/1793ecf8-4415-4591-81f6-91d568752063)
+![erd](https://github.com/user-attachments/assets/d582cc12-3017-4022-af1f-ddd35310cb1d)
 
 <br/>
 
 # ✅주요 기능
-- **홈 페이지**  [📎Wiki - 상세보기](https://github.com/1489ehdghks/NOST/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Login))
-- **책 목록**  [📎Wiki - 상세보기](https://github.com/1489ehdghks/NOST/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Book))
-- **프로필 페이지**  [📎Wiki - 상세보기](https://github.com/1489ehdghks/NOST/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Profile))
-- **소설 생성**  [📎Wiki - 상세보기](https://github.com/1489ehdghks/NOST/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C-(New-Novel))
-- **사이드바**
+- **홈 페이지**  [📎Wiki - 상세보기](https://github.com/Juunsik/NOST-backend/wiki/Home-Page)
+- **소설 생성**  [📎Wiki - 상세보기](https://github.com/Juunsik/NOST-backend/wiki/New-Novel)
+- **책 목록**  [📎Wiki - 상세보기](https://github.com/Juunsik/NOST-backend/wiki/Novel-List)
 
 <br/>
 

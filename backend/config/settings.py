@@ -257,19 +257,27 @@ USE_TZ = True
 
 
 # AWS Setting
-AWS_REGION = "ap-northeast-2"  # AWS서버의 지역
-AWS_STORAGE_BUCKET_NAME = secret.MY_AWS_STORAGE_BUCKET_NAME  # 생성한 버킷 이름
-AWS_ACCESS_KEY_ID = secret.MY_AWS_ACCESS_KEY_ID  # 액서스 키 ID
-AWS_SECRET_ACCESS_KEY = secret.MY_AWS_SECRET_ACCESS_KEY  # 액서스 키 PW
-# 버킷이름.s3.AWS서버지역.amazonaws.com 형식
-AWS_S3_CUSTOM_DOMAIN = "%s.s3.%s.amazonaws.com" % (AWS_STORAGE_BUCKET_NAME, AWS_REGION)
-# Static Setting
-STATIC_URL = "https://%s/static/" % AWS_S3_CUSTOM_DOMAIN
-STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
-# Media Setting
+if not DEBUG:
+    AWS_REGION = "ap-northeast-2"  # AWS서버의 지역
+    AWS_STORAGE_BUCKET_NAME = secret.MY_AWS_STORAGE_BUCKET_NAME  # 생성한 버킷 이름
+    AWS_ACCESS_KEY_ID = secret.MY_AWS_ACCESS_KEY_ID  # 액서스 키 ID
+    AWS_SECRET_ACCESS_KEY = secret.MY_AWS_SECRET_ACCESS_KEY  # 액서스 키 PW
+    # 버킷이름.s3.AWS서버지역.amazonaws.com 형식
+    AWS_S3_CUSTOM_DOMAIN = "%s.s3.%s.amazonaws.com" % (
+        AWS_STORAGE_BUCKET_NAME,
+        AWS_REGION,
+    )
+    # Static Setting
+    STATIC_URL = "https://%s/static/" % AWS_S3_CUSTOM_DOMAIN
+    STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+    # Media Setting
 
-MEDIA_URL = "https://%s/meida/" % AWS_S3_CUSTOM_DOMAIN
-DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+    MEDIA_URL = "https://%s/meida/" % AWS_S3_CUSTOM_DOMAIN
+    DEFAULT_FILE_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+else:
+    STATIC_URL = "/static/"
+    MEDIA_URL = "/media/"
+    MEDIA_ROOT = BASE_DIR / "media"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

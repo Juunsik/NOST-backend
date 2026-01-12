@@ -21,9 +21,9 @@
 
 <br/>
 
-👨‍💻 [**백엔드**](https://github.com/Juunsik/NOST-backend)
+👨‍💻 [**백엔드**](https://github.com/yeo-un/NOST-backend)
 
-- 허준혁 [@Juunsik] (https://github.com/Juunsik)
+- 허준혁 [@yeo-un] (https://github.com/yeo-un)
 - 이혜민 [@hy2min] (https://github.com/hy2min)
 
 <br/>
@@ -113,9 +113,9 @@
 <br/>
 
 # ✅주요 기능
-- **홈 페이지**  [📎Wiki - 상세보기](https://github.com/Juunsik/NOST-backend/wiki/Home-Page)
-- **소설 생성**  [📎Wiki - 상세보기](https://github.com/Juunsik/NOST-backend/wiki/New-Novel)
-- **책 목록**  [📎Wiki - 상세보기](https://github.com/Juunsik/NOST-backend/wiki/Novel-List)
+- **홈 페이지**  [📎Wiki - 상세보기](https://github.com/yeo-un/NOST-backend/wiki/Home-Page)
+- **소설 생성**  [📎Wiki - 상세보기](https://github.com/yeo-un/NOST-backend/wiki/New-Novel)
+- **책 목록**  [📎Wiki - 상세보기](https://github.com/yeo-un/NOST-backend/wiki/Novel-List)
 
 <br/>
 
